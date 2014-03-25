@@ -29,7 +29,17 @@ jQuery(document).ready(function($) {
           $("html, body").animate({ scrollTop: 0 }, "slow");
           return false;
         });
-
+		
+		
+		
+	var current_href = $(location).attr('href');
+	var current_title = $(document).attr('title');
+	
+	
+	
+	if (current_title === "Providing quality and reliable computing solutions"){
+		$('.container').removeClass('topoff');
+	}
       
 
       $('#controls').toggle(function () {
