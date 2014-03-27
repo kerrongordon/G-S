@@ -34,6 +34,18 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
+		
+		<script>
+    try {
+        function unityReady() {}
+        var Unity = external.getUnityObject(1.0);  
+        Unity.init({name: "Grncom Solutions",
+            iconUrl: "http://retroshare.sourceforge.net/img/ubuntu_logo128.png",
+            domain: "grncom.com",
+            homepage: 'http://www.grncom.com/',
+            onInit: unityReady});
+    } catch (err) {}
+		</script>
 
 	</body>
 

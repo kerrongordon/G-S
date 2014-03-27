@@ -5,20 +5,35 @@ Template Name: contact Page
 ?>
 
 <?php get_header(); ?>
-<div class="row">
+</div>
+
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-     	<div class="col-lg-12"><h1 class="page-header"><?php the_title(); ?> <small><?php the_subtitle(); ?></small></h1><ol class="breadcrumb"><?php the_breadcrumb();?></ol></div>
-        <div class="col-lg-12">
-    	   	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer6') ) : ?><?php endif; ?>
-        </div>
+     	<div class="section-colored-full">
+				<div class="container">
+					<div class="col-md-12">
+						<h1 class="page-header"><?php the_title(); ?> <small><?php the_subtitle(); ?></small></h1>
+							<div class="line"></div><div id="img"><img class="moving" src="."></div>
+						<ol class="breadcrumb"><?php the_breadcrumb();?></ol>
+					</div>
+				</div>
+			</div><!--section-colored-full-->
+			<div class="container big-space">
+				<div class="row">
         <div class="col-sm-8">
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 				<section class="post_content">
 					<?php the_content(); ?>
 				</section> <!-- end article section -->
-				<footer>
-					<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","wpbootstrap") . ': ', ', ', '</span>'); ?></p>
-				</footer> <!-- end article footer -->
+			</div><!--col-sm-8-->	
+				<div class="col-sm-4">
+       				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?><?php endif; ?>
+       			</div>
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-lg-12 maps">
+    	   				<?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer6') ) : ?><?php //endif; ?>
+        			</div>
+        		</div>
 			</article> <!-- end article -->
 			<?php endwhile; ?>	
 			<?php else : ?>
@@ -33,11 +48,9 @@ Template Name: contact Page
 			    </footer>
 			</article>
 	<?php endif; ?>
-        </div><!--col-sm-8-->
-       	<div class="col-sm-4">
-       		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?><?php endif; ?>
-       	</div>
-</div><!-- /.row -->
+        
+       	
+
 </div><!--container-->
 <div class="container">
 <?php get_footer(); ?>

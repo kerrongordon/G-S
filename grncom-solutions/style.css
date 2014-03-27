@@ -19,7 +19,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	font-family:'Gafata',sans-serif;
 	font-weight:normal;
 	color:#222;
-	font-size:17px;
+	font-size:15px;
 	line-height:1.5
 }
 .img-home-portfolio,.img-customer,.portfolio-item
@@ -43,7 +43,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .section-colored p
 {
-	font-size:17px;
+	font-size:15px;
 	font-family:'Gafata',sans-serif
 }
 .sidebar
@@ -150,8 +150,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .breadcrumb
 {
-	background-color:#f46900;
-	border-radius:0
+	background-color:transparent;
+	border-radius:0;
+	color: #222;
 }
 .breadcrumb>.active
 {
@@ -180,7 +181,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	font-family:'Gafata',sans-serif;
 	font-weight:normal;
 	color:#222;
-	font-size:17px;
+	font-size:15px;
 	line-height:1.5
 }
 .lead
@@ -188,7 +189,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	font-family:'Gafata',sans-serif;
 	font-weight:normal;
 	color:#222;
-	font-size:17px;
+	font-size:15px;
 	line-height:1.5
 }
 .widgettitle
@@ -300,11 +301,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .homebg2
 {
-	background:#f46900;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover
+	background:url('images/fbg.png') repeat;
+	box-shadow: 0 0 5px 0px #000 inset;
 }
 .home-w .wp-post-image
 {
@@ -344,6 +342,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	background: rgba(252,252,252,0.9);
     border-color: rgba(244,105,0,0.61);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.23);
 }
 
 }
@@ -381,11 +380,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .homebg2
 {
-	background:#f46900;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover
+	background:url('images/fbg.png') repeat;
+	box-shadow: 0 0 5px 0px #000 inset;
 }
 .home-w
 {
@@ -469,6 +465,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	background: rgba(252,252,252,0.9);
     border-color: rgba(244,105,0,0.61);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.23);
 }
 
 }
@@ -521,11 +518,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .homebg2
 {
-	background:#f46900;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover
+	background:url('images/fbg.png') repeat;
+	box-shadow: 0 0 5px 0px #000 inset;
 }
 .home-w
 {
@@ -581,6 +575,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	background: rgba(252,252,252,0.9);
     border-color: rgba(244,105,0,0.61);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.23);
 }
 
 }
@@ -696,7 +691,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	width:100%;
 	padding:100px 0 100px 0;
-	background-color:#f46900;
+	background:url('images/fbg.png') repeat;
+	box-shadow: 0 0 5px 0px #000 inset;
 	color:#fff
 }
 .section-colored-full .widgettitle {
@@ -820,8 +816,7 @@ img {
 	filter: contrast(1.1);
 }
 .footer-bg-color {
-	background: #333;
-	border-top: 4px solid #f46900;
+	background: rgba(85, 41, 141, 1);
 }
 .footer-bg-color .lead,
 .footer-bg-color .tweet-text,
@@ -857,4 +852,17 @@ blockquote {
 }
 .widget_woothemes_our_team a {
 	color: #fff;
+}
+
+.page-header {
+	border: none;
+}
+.maps {
+	padding-top: 50px;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #222;
 }

@@ -7,11 +7,15 @@ Template Name: about Page
 <?php get_header(); ?>
 </div>			
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="container">
-			<div class="col-lg-12">
-				<h1 class="page-header"><?php the_title(); ?> <small><?php the_subtitle(); ?></small></h1><ol class="breadcrumb"><?php the_breadcrumb();?></ol>
-			</div>	
-		</div>	
+		<div class="section-colored-full">
+				<div class="container">
+					<div class="col-md-12">
+						<h1 class="page-header"><?php the_title(); ?> <small><?php the_subtitle(); ?></small></h1>
+							<div class="line"></div><div id="img"><img class="moving" src="."></div>
+						<ol class="breadcrumb"><?php the_breadcrumb();?></ol>
+					</div>
+				</div>
+			</div><!--section-colored-full-->
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 			<div class="container">
 				<div class="col-sm-12 clearfix">

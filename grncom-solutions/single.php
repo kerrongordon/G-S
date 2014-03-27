@@ -1,10 +1,16 @@
 <?php get_header(); ?>
-			
-			<div id="content" class="clearfix row">
-			<div class="col-lg-12">
-                	<h1 class="page-header"><?php the_title();?><small><?php the_subtitle(); ?></small></h1>
-          			<ol class="breadcrumb"><?php the_breadcrumb();?></ol>
-        		</div>
+</div>			
+			<div class="section-colored-full">
+				<div class="container">
+					<div class="col-md-12">
+						<h1 class="page-header"><?php the_title(); ?> <small><?php the_subtitle(); ?></small></h1>
+							<div class="line"></div><div id="img"><img class="moving" src="."></div>
+						<ol class="breadcrumb"><?php the_breadcrumb();?></ol>
+					</div>
+				</div>
+			</div><!--section-colored-full-->
+			<div class="container">
+			<div id="content" class="clearfix row big-space">
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
 
