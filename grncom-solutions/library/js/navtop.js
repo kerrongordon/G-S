@@ -18,9 +18,9 @@ jQuery(document).ready(function($) {
     */
 
     $(window).scroll(function(){
-         if ($(window).scrollTop() > 70){
+         if ($(window).scrollTop() > 60){
             $(".navbar-default").addClass("navbar-default-scrll");
-         } else if ($(window).scrollTop() < 70) {
+         } else if ($(window).scrollTop() < 60) {
             $(".navbar-default").removeClass("navbar-default-scrll");
          }
     });
@@ -39,6 +39,17 @@ jQuery(document).ready(function($) {
 	
 	if (current_title === "Providing quality and reliable computing solutions"){
 		$('.container').removeClass('topoff');
+		$('.navbar-default .navbar-nav>li>a').css('color','#fff');
+		$('.navbar-default .navbar-brand').css('color','#fff');
+		$(window).scroll(function(){
+         	if ($(window).scrollTop() > 60){
+            	$('.navbar-default .navbar-nav>li>a').css('color','#777');
+				$('.navbar-default .navbar-brand').css('color','#777');
+         	} else if ($(window).scrollTop() < 60) {
+            	$('.navbar-default .navbar-nav>li>a').css('color','#fff');
+				$('.navbar-default .navbar-brand').css('color','#fff');
+         	}
+    	});
 	}
       
 
