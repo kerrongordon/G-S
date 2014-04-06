@@ -75,8 +75,10 @@ jQuery(document).ready(function($) {
           $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
       });
-      
 
+      
+      $('.post_content a img').addClass("img-responsive");
+      $('#content img').attr('rel', 'lightbox');
 
     /*
     $(window).scroll(function() {

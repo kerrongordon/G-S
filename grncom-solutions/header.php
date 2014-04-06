@@ -10,7 +10,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><?php wp_title( '|', true, 'right' ); ?><?php the_subtitle(); ?></title>	
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				
 		<!-- media-queries.js (fallback) -->
 		<!--[if lt IE 9]>
@@ -104,4 +104,4 @@ document.oncontextmenu=new Function("return false")
 		
 		</header> <!-- end header -->
 			
-		<div class="container topoff">
+		<div class="container topoff moblie-topoff">
