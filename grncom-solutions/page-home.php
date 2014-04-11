@@ -19,6 +19,7 @@ Template Name: Home kgp
 			<div id="content" class="clearfix row">
 				<div id="main" class="col-sm-12 clearfix home-warpper" role="main">					
                     <section class="post_content">
+                    	<h2 class="home-page-services">Our Services <hr></h2>
 						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar2') ) : ?><?php endif; ?>
 					</section> <!-- end article header -->
     			</div> <!-- end #main -->
