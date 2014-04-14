@@ -6,7 +6,7 @@ Template Name: Home kgp
 
 <?php get_header(); ?>
 </div>
-	<div align="center" class="">
+	<div align="center" class="demoslider">
 		<?php putRevSlider("demo") ?>
 	</div>
 <div class="container">

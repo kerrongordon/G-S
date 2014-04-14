@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
     }, function () {
         $(".top-s-box").animate( {"width":"65px"}, 400);
     });
-    */
+    
 
     $(window).scroll(function(){
          if ($(window).scrollTop() > 60){
@@ -29,29 +29,12 @@ jQuery(document).ready(function($) {
           $("html, body").animate({ scrollTop: 0 }, "slow");
           return false;
         });
-		
+		*/
 		
 		
 	var current_href = $(location).attr('href');
 	var current_title = $(document).attr('title');
 	
-	
-	
-	if (current_title === "Providing quality and reliable computing solutions"){
-		$('.container').removeClass('topoff');
-		$('.navbar-default .navbar-nav>li>a').css('color','#fff');
-		$('.navbar-default .navbar-brand').css('color','#fff');
-		$(window).scroll(function(){
-         	if ($(window).scrollTop() > 60){
-            	$('.navbar-default .navbar-nav>li>a').css('color','#777');
-				$('.navbar-default .navbar-brand').css('color','#777');
-         	} else if ($(window).scrollTop() < 60) {
-            	$('.navbar-default .navbar-nav>li>a').css('color','#fff');
-				$('.navbar-default .navbar-brand').css('color','#fff');
-         	}
-    	});
-	}
-      
 
       $('#controls').toggle(function () {
           $(this).css( {"left":"0"} );
@@ -80,19 +63,19 @@ jQuery(document).ready(function($) {
       $('.post_content a img').addClass("img-responsive");
       $('#content img').attr('rel', 'lightbox');
 
-    /*
-    $(window).scroll(function() {
-        var x = $(this).scrollTop();
-          $('.homebg1').css('background-position', '50% ' + parseInt(-x / 50) + 'px');
-    });
-    
 
+      $.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+    
+    if (!$.browser.device){
     $(window).scroll(function() {
         var x = $(this).scrollTop();
-          $('.homebg2').css('background-position', '50% ' + parseInt(-x / 50) + 'px');
+          $('.section-colored-full').css('background-position', '50% ' + parseInt(-x / 8) + 'px');
     });
-   */
-  
+    }
+
+    
+   
+  $('body').prepend($(".demoslider"));
 	
 
 });

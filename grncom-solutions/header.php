@@ -35,7 +35,7 @@
 	<body <?php body_class(); ?>>			
 		<header role="banner">
 				<div id="top"></div>
-			<div id="home" class="navbar navbar-default navbar-fixed-top">
+			<div id="home" class="navbar navbar-default ">
 				<div class="container">
           
 					<div class="navbar-header">
@@ -45,7 +45,7 @@
 							<span class="icon-bar"></span>
 						</button>
 
-						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>" ><img class="img-responsive navbar-logo" src="<?php bloginfo('template_url') ?>/images/logo.png"></a>
 					</div>
 
 					<div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
