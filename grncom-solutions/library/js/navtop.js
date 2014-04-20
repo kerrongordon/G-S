@@ -47,10 +47,10 @@ jQuery(document).ready(function($) {
       backtoTop.hide();
 
       $(window).scroll(function () {
-            if ($(this).scrollTop() < 400) {
-                backtoTop.fadeOut();
+            if ($(this).scrollTop() > $('.demoslider').hight()) {
+                $('.navbar-default').addClass('navbar-fixed-top');
             } else {
-                backtoTop.fadeIn();
+                $('.navbar-default').removeClass('navbar-fixed-top');
             }
         });
 

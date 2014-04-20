@@ -263,6 +263,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	border:5px solid #000
 }
+.homebg1 {
+	background-color: #7796c0;
+}
 .home-infor1
 {
 	padding:100px 0 5px;
@@ -330,6 +333,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	float:left;
 	width:20px;
 	margin:7px
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
 }
 .home-w p:last-child
 {
@@ -1134,3 +1142,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	position: absolute;
 	top: -0px;
 }
+
+.home-w .wp-post-image:hover {
+  	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+
