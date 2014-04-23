@@ -384,8 +384,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .navbar-nav>li>a 
 {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.navbar-nav>li {
+	margin: 0 5px;
 }
 .home-infor1 img
 {
@@ -631,7 +634,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	float:none;
 	width:75px;
-	margin:0px
+	margin:30px
 }
 .post
 {
@@ -1100,15 +1103,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 
 .navbar-form {
-	padding-top: 6px;
+	padding-top: 15px;
 	padding-bottom: 0px;
 }
 
 .navbar-default .navbar-toggle: {
 	color: #b7b7b7;
 	background-color: white;
-	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 5px rgba(0, 0, 0, 0.25);
-	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 5px rgba(0, 0, 0, 0.25);
 	outline: 0;
 }
 
@@ -1116,8 +1117,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	color: #919191;
 	outline: 0;
 	background-color: #fff;
-	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
-	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
 	-webkit-transition:all .35s ease;
 	-moz-transition:all .35s ease;
 	-ms-transition:all .35s ease;
@@ -1138,17 +1137,62 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 
 .navbar-logo {
 	display: inline;
-	width: 150px;
+	width: 200px;
 	position: absolute;
 	top: -0px;
+	z-index: 999;
+}
+.home-w:hover {
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.55);
+	-webkit-transition:all .35s ease;
+	-moz-transition:all .35s ease;
+	-ms-transition:all .35s ease;
+	-o-transition:all .35s ease;
+	transition:all .35s ease
+}
+.home-w:hover .wp-post-image {
+	-webkit-animation: logo 1s infinite ease;
+	-moz-animation: logo 1s infinite ease;
+	-ms-animation: logo 1s infinite ease;
+	-o-animation: logo 1s infinite ease;
+	animation: logo 1s infinite ease;
 }
 
-.home-w .wp-post-image:hover {
-  	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-ms-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
+@-webkit-keyframes logo {
+	0% { -webkit-transform:scale(1) rotate(0deg); }
+	50% { -webkit-transform:scale(1.5) rotate(0deg); }
+}
+@-moz-keyframes logo {
+	0% { -moz-transform:scale(1) rotate(0deg); }
+	50% { -moz-transform:scale(1.5) rotate(0deg); }
+}
+@-ms-keyframes logo {
+	0% { -ms-transform:scale(1) rotate(0deg); }
+	50% { -ms-transform:scale(1.5) rotate(0deg); }
+}
+@-o-keyframes logo {
+	0% { -o-transform:scale(1) rotate(0deg); }
+	50% { -o-transform:scale(1.5) rotate(0deg); }
+}
+@keyframes logo {
+	0% { transform:scale(1) rotate(0deg); }
+	50% { transform:scale(1.5) rotate(0deg); }
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	border-top: solid 5px #f46900;
+	-webkit-transition:all .35s ease;
+	-moz-transition:all .35s ease;
+	-ms-transition:all .35s ease;
+	-o-transition:all .35s ease;
+	transition:all .35s ease
+}
+.home-w:hover .btn-info {
+	color: #fff;
+	background-color: #f46900;
+	border-color: #222;
 }
 
 
