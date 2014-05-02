@@ -22,7 +22,9 @@
 							<hr/>
 								<p class="meta"><i class="fa fa-clock-o"></i> <?php _e("Posted on", "wpbootstrap"); ?> <?php the_time('l, F jS, Y') ?> at <?php the_time() ?> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 							<hr/>
-							<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+							
+<?php if ( has_post_thumbnail()) { $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); echo '<a href="' . $large_image_url[0] . '" data-lightbox="image-1" title="' . the_title_attribute('echo=0') . '" >'; the_post_thumbnail('wpbs-featured'); echo '</a>';}?>
+
 							
 							<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>
 						

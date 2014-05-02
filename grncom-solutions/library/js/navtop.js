@@ -53,17 +53,21 @@ jQuery(document).ready(function($) {
       
       $('.post_content a img').addClass("img-responsive");
       $('#content img').attr('rel', 'lightbox');
+      $('#content img').attr('rel', 'lightbox');
 
 
       $.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
-    
+    /*
     if (!$.browser.device){
     $(window).scroll(function() {
         var x = $(this).scrollTop();
           $('.section-colored-full, .homebg2').css('background-position', '50% ' + parseInt(-x / 8) + 'px');
     });
     }
+    */
 
+    
+    $("homebg1").fadeIn(); 
     
    
   //$('body').prepend($(".demoslider"));

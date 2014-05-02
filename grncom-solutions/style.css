@@ -20,7 +20,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	font-weight:400;
 	color:#222;
 	font-size:15px;
-	line-height:1.5
+	line-height:1.5;
+	height: 100%;
 }
 .img-home-portfolio,.img-customer,.portfolio-item
 {
@@ -101,7 +102,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .marketing h2
 {
-	color:#f46900
+	color:#ff7e28
 }
 .marketing .col-md-4
 {
@@ -110,7 +111,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .carousel-indicators li
 {
-	border:1px solid #f46900
+	border:1px solid #ff7e28
 }
 .carousel-control.left,.carousel-control.right
 {
@@ -118,12 +119,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus
 {
-	background-color:#f46900;
+	background-color:#ff7e28;
 	color:#fff
 }
 .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus
 {
-	background:#f46900;
+	background:#ff7e28;
 	color:#fff
 }
 	label
@@ -143,10 +144,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	border-radius:0;
 	box-shadow:none;
 	-webkit-box-shodow:none;
-	-webkit-transition:all .7s ease 0;
-	-moz-transition:all .7s ease 0;
-	-o-transition:all .7s ease 0;
-	transition:all .7s ease 0
+	-webkit-transition:all 0.7s ease 0;
+	-moz-transition:all 0.7s ease 0;
+	-o-transition:all 0.7s ease 0;
+	transition:all 0.7s ease 0
 }
 .breadcrumb
 {
@@ -165,7 +166,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 	a
 {
-	color:#f46900
+	color:#ff7e28
 }
 .pic
 {
@@ -175,7 +176,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	text-decoration:none;
 	color:#262626;
-	background-color:#f46900
+	background-color:#ff7e28
 }
 	p
 {
@@ -195,7 +196,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .widgettitle
 {
-	color:#f46900;
+	color:#ff7e28;
 	margin-top:20px;
 	margin-bottom:30px
 }
@@ -205,7 +206,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .form-control:focus
 {
-	border-color:#f46900;
+	border-color:#ff7e28;
 	outline:0;
 	-webkit-box-shadow:none;
 	box-shadow:none
@@ -264,7 +265,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	border:5px solid #000
 }
 .homebg1 {
-	background-color: #7796c0;
+	background-color: #ff7e28;
+	overflow: hidden;
 }
 .home-infor1
 {
@@ -303,17 +305,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .navbar-default .navbar-nav>li>a 
 {
-	color:#777
+	color:#777;
+	border-top: solid 5px transparent;
+	-webkit-transition:border-top.75s ease;
+	-moz-transition:border-top.75s ease;
+	-ms-transition:border-top.75s ease;
+	-o-transition:border-top.75s ease;
+	transition:border-top .75s ease
 }
 .homebg1
 {
 	background:url(images/server-mobile.jpg) no-repeat center center;
+	background-color: #ff7e28;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
 	-webkit-filter:contrast(1.1);
-	filter:contrast(1.1)
+	filter:contrast(1.1);
+	overflow: hidden;
 }
 .homebannerlogo
 {
@@ -387,9 +397,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.navbar-nav>li {
-	margin: 0 5px;
-}
 .home-infor1 img
 {
 	text-align:center;
@@ -413,12 +420,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 .homebg1
 {
 	background:url(images/server-tab.jpg) no-repeat center center;
+	background-color: #ff7e28;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
 	-webkit-filter:contrast(1.1);
-	filter:contrast(1.1)
+	filter:contrast(1.1);
+	overflow: hidden;
 }
 .homebannerlogo
 {
@@ -620,6 +629,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	margin-top:0
 }
+.demoslider {
+	min-height: 70%;
+	display: block;
+}
 .home-infor1 img
 {
 	float:left;
@@ -643,12 +656,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 .homebg1
 {
 	background:url(images/server.jpg) no-repeat center center;
+	background-color: #ff7e28;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
 	-webkit-filter:contrast(1.1);
-	filter:contrast(1.1)
+	filter:contrast(1.1);
+	overflow: hidden;
 }
 .homebannerlogo
 {
@@ -1028,7 +1043,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .Servicesinfor ul li a:hover
 {
-	color:#f46900
+	color:#ff7e28
 }
 .Servicesinfor h2
 {
@@ -1055,7 +1070,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 {
 	padding:10px 20px;
 	margin:0 0 20px;
-	border-left:5px solid #f46900
+	border-left:5px solid #ff7e28
 }
 .pluginBoxDivider
 {
@@ -1075,7 +1090,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 .btn-info:hover,.btn-info:focus,.btn-info:active,.btn-info.active,.open .dropdown-toggle.btn-info
 {
 	color:#fff;
-	background-color:#f46900;
+	background-color:#ff7e28;
 	border-color:#222
 }
 .widget_woothemes_our_team a
@@ -1182,7 +1197,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	border-top: solid 5px #f46900;
+	border-top: solid 5px #ff7e28;
 	-webkit-transition:all .35s ease;
 	-moz-transition:all .35s ease;
 	-ms-transition:all .35s ease;
@@ -1191,8 +1206,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 }
 .home-w:hover .btn-info {
 	color: #fff;
-	background-color: #f46900;
+	background-color: #ff7e28;
 	border-color: #222;
 }
-
+.biglogo {
+	display: inline;
+}
 

@@ -27,7 +27,6 @@
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
 				
 	</head>
@@ -45,7 +44,7 @@
 							<span class="icon-bar"></span>
 						</button>
 
-						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>" ><img class="img-responsive navbar-logo" src="<?php bloginfo('template_url') ?>/images/logo.png"></a>
+						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>" ><h2><?php bloginfo('name'); ?></h2></a>
 					</div>
 
 					<div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">

@@ -34,7 +34,9 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
-
+		<script>
+ 			new WOW().init();
+		</script>
 	</body>
 
 </html>

@@ -75,7 +75,7 @@ function wp_bootstrap_register_sidebars() {
     	'id' => 'sidebar2',
     	'name' => 'Homepage Sidebar',
     	'description' => 'Used only on the homepage page template.',
-    	'before_widget' => '<div id="%1$s" class="widget col-sm-6 col-md-4 home-w %2$s">',
+    	'before_widget' => '<div id="%1$s" class="widget col-sm-6 col-md-4 wow bounceInLeft home-w %2$s data-wow-delay="0.55s">',
     	'after_widget' => '</div>',
     	'before_title' => '<h2 class="widgettitle">',
     	'after_title' => '</h2>',
@@ -120,7 +120,7 @@ function wp_bootstrap_register_sidebars() {
     register_sidebar(array(
       'id' => 'footer5',
       'name' => 'home-infor',
-      'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
+      'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s wow slideInDown" data-wow-duration="2s" data-wow-delay="1s">',
       'after_widget' => '</div>',
       'before_title' => '<h4 class="widgettitle">',
       'after_title' => '</h4>',
@@ -516,6 +516,14 @@ if( !function_exists("theme_styles") ) {
         // For child themes
         wp_register_style( 'wpbs-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs-style' );
+
+        // animate.min.css
+        wp_register_style( 'animate', get_stylesheet_directory_uri() . '/library/css/animate.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'animate' );
+
+        // lightbox
+        wp_register_style( 'lightbox', get_stylesheet_directory_uri() . '/library/css/lightbox.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'lightbox' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
@@ -544,9 +552,19 @@ if( !function_exists( "theme_js" ) ) {
       array('jquery'), 
       '1.2' );
 
+    wp_register_script(  'lightbox', 
+      get_template_directory_uri() . '/library/js/lightbox.min.js', 
+      array('jquery'), 
+      '1.2' );
+
+    wp_register_script(  'wow', 
+      get_template_directory_uri() . '/library/js/wow.min.js');
+
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('wpbs-scripts');
     wp_enqueue_script('modernizr');
+    wp_enqueue_script('wow');
+    wp_enqueue_script('lightbox');
     wp_enqueue_script('navtop'); 
     
     
